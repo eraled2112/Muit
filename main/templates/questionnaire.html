@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="questionnaire">
+        <div class="container">
+            <div class="questionnaire__content">
+                <h2>Анкеты</h2>
+                <div class="questionnaire__block">
+                    <p>Учреждение образования «Международный университет инновационных технологий» осуществляет
+                        постоянный мониторинг удовлетворенности результатами деятельности и предлагает Вам принять
+                        участие в анкетировании.
+                        Анкеты анонимны, все данные используются в обобщенном виде.
+                        Заранее благодарим за помощь!</p>
+                </div>
+                <div class="questionnaire__box">
+                    <div class="questionnaire__row">
+                        <ul>
+                            <li>Анкетирование Института дизайна, архитектура и текстиля</li>
+                            <img src="{% static '/assets/icons/down.svg' %}" alt="">
+                        </ul>
+                    </div>
+                    <div class="questionnaire__row">
+                        <ul>
+                            <li>Анкетирование Института цифровой трансформации и программирования</li>
+                            <img src="{% static '/assets/icons/down.svg' %}" alt="">
+                        </ul>
+                    </div>
+                    <div class="questionnaire__row">
+                        <ul>
+                            <li>Анкетирование Института строительства и инновационных технологий</li>
+                            <img src="{% static '/assets/icons/down.svg' %}" alt="">
+                        </ul>
+                    </div>
+                    <div class="questionnaire__row">
+                        <ul>
+                            <li>Анкетирование Института энергетики и транспорта</li>
+                            <img src="{% static '/assets/icons/down.svg' %}" alt="">
+                        </ul>
+                    </div>
+                    <div class="questionnaire__row">
+                        <ul>
+                            <li>Анкетирование Института экономики и менеджмента</li>
+                            <img src="{% static '/assets/icons/down.svg' %}" alt="">
+                        </ul>
+                    </div>
+                    <div class="questionnaire__row">
+                        <ul>
+                            <li>Анкетирование Института российско-кыргызского института автоматизации управления бизнеса
+                            </li>
+                            <img src="{% static '/assets/icons/down.svg' %}" alt="">
+                        </ul>
+                    </div>
+                    <div class="questionnaire__row">
+                        <ul>
+                            <li>Анкетирование Института межкультурной коммуникации и психологии</li>
+                            <img src="{% static '/assets/icons/down.svg' %}" alt="">
+                        </ul>
+                    </div>
+                    <div class="questionnaire__row">
+                        <ul>
+                            <li>Структурные подразделения</li>
+                            <img src="{% static '/assets/icons/down.svg' %}" alt="">
+                        </ul>
+                    </div>
+                    <div class="questionnaire__row">
+                        <ul>
+                            <li>Анкета “Оценка удовлетворенности сотрудников и ППС деятельностью МУИТ”</li>
+                            <img src="{% static '/assets/icons/down.svg' %}" alt="">
+                        </ul>
+                    </div>
+                    <div class="questionnaire__row">
+                        <ul>
+                            <li>Анкетирование Института маркетинга и электронной коммерции</li>
+                            <img src="{% static '/assets/icons/down.svg' %}" alt="">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="application">
+        <div class="container">
+            <div class="application__content">
+                <h2>Оставь заявку на обучение</h2>
+                <div class="application__block">
+                    <input type="text" placeholder="Имя">
+                    <input type="number" placeholder="Телефон">
+                    <button>Подать заявку</button>
+                </div>
+                <div class="application__chekbox">
+                    <input type="checkbox">
+                    <p>
+                        Я даю согласие на обработку персональных данных согласен на получение информационных рассылок
+                        от Университета «МУИТ» и соглашаюсь с политикой конфиденциальности
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
