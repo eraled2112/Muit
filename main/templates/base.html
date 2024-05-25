@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="{% static './css/index.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
@@ -18,13 +18,13 @@
                         <img src="{% static './assets/img/header/logo.svg' %}" alt="#">
                         <div class="header__box">
                             <p>
-                                <a href="./index.html">
+                                <a href="/">
                                     МЕЖДУНАРОДНЫЙ
                                     УНИВЕРСИТЕТ
                                 </a>
                             </p>
                             <p>
-                                <a href="./index.html">
+                                <a href="/">
                                     ИННОВАЦИОННЫХ
                                     ТЕХНОЛОГИЙ
                                 </a>
@@ -41,12 +41,12 @@
                     </div>
                 </div>
                 <ul class="header__list">
-                    <li> <a href="#">Абитуриентам</a></li>
-                    <li><a href="#">Факультеты</a></li>
+                    <li> <a href="/admission/">Абитуриентам</a></li>
+                    <li><a href="/institute/">Факультеты</a></li>
                     <li><a href="">Специальности</a></li>
-                    <li><a href="./html/courses.html">Курсы</a></li>
+                    <li><a href="/courses/">Курсы</a></li>
                     <li><a href=""></a>Студентам</li>
-                    <li><a href="">Об университете</a></li>
+                    <li><a href="/about/">Об университете</a></li>
                 </ul>
             </div>
         </div>

@@ -17,7 +17,7 @@
                         <button>Подать заявку</button>
                 </div>
                 <div class="university__right">
-                    <img src="./assets/img/university/image 4.png" alt="#">
+                    <img src="{% static './assets/img/university/image 4.png' %}' %}" alt="#">
                 </div>
                 <div class="university__mobile">
                     <div class="university__mobile--version">
@@ -28,8 +28,10 @@
                             Узнайте проходной й балл в 2024 году, оставив
                             заявку.
                         </p>
-                        <img src="./assets/img/university/image 4.png" alt="#">
-                        <button>Подать заявку</button>
+                        <img src="{% static './assets/img/university/image 4.png' %}" alt="#">
+                        <a href="reception/">
+                            <button>Подать заявку</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -41,26 +43,34 @@
             <div class="education__content">
                 <h2>Выберите направление образования</h2>
                 <div class="education__block">
+                    <a href="college/">
                     <div class="education__box">
                         <h3>Колледж</h3>
                         <p>17 факультета / 19 программ</p>
                         <div class="education__line"></div>
                     </div>
+                    </a>
+                    <a href="college/">
                     <div class="education__box">
                         <h3>Колледж</h3>
                         <p>17 факультета / 19 программ</p>
                         <div class="education__line"></div>
                     </div>
+                    </a>
+                    <a href="college/">
                     <div class="education__box">
                         <h3>Колледж</h3>
                         <p>17 факультета / 19 программ</p>
                         <div class="education__line"></div>
                     </div>
+                    </a>
+                    <a href="college/">
                     <div class="education__box">
                         <h3>Колледж</h3>
                         <p>17 факультета / 19 программ</p>
                         <div class="education__line"></div>
                     </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -79,6 +89,7 @@
                     </ul>
                 </div>
                 <div class="faculties__block" id="Hiden">
+                    <a href="digitalinstitute/">
                     <div class="faculties__box">
                         <h2>Программирование</h2>
                         <p>12 специальностей</p>
@@ -96,6 +107,7 @@
                                 stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
+                    </a><a href="instituteeconomics/">
                     <div class="faculties__box">
                         <h2>Экономика</h2>
                         <p>12 специальностей</p>
@@ -107,6 +119,8 @@
                         </svg>
 
                     </div>
+                    </a>
+                    <a href="institutedesign/">
                     <div class="faculties__box">
                         <h2>Дизайнер</h2>
                         <p>12 специальностей</p>
@@ -129,6 +143,7 @@
                             </defs>
                         </svg>
                     </div>
+                    </a>
                     <div class="faculties__box">
                         <h2>Психология</h2>
                         <p>12 специальностей</p>
@@ -140,6 +155,7 @@
                         </svg>
 
                     </div>
+                    <a href="institutemarketing/">
                     <div class="faculties__box">
                         <h2>Маркетинг</h2>
                         <p>12 специальностей</p>
@@ -151,6 +167,7 @@
                         </svg>
 
                     </div>
+                    </a>
                     <div class="faculties__box">
                         <h2>Технологии</h2>
                         <p>12 специальностей</p>
@@ -181,12 +198,12 @@
                                 d="M50.0013 40.625L58.3346 45.3125V54.6875L50.0013 59.375L41.668 54.6875V45.3125L50.0013 40.625Z"
                                 stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-
                     </div>
                 </div>
-                <button id="HidenButton"><img src="./assets/img/faculties/add.svg" alt="">Показать еще</button>
+                <a href="institute/"><button id="HidenButton"><img src="{% static './assets/img/faculties/add.svg' %}" alt="">Показать еще</button></a>
             </div>
         </div>
+
     </section>
     <section class="reception">
         <div class="container">
@@ -196,27 +213,27 @@
                     <div class="reception__block">
                         <div class="reception__box">
                             <p>Гранты на обучение</p>
-                            <img src="./assets/img/reception/book.svg" alt="#">
+                            <img src="{% static './assets/img/reception/book.svg' %}" alt="#">
                         </div>
                         <div class="reception__box">
                             <p>Прием после 9 и 11 класса</p>
-                            <img src="./assets/img/reception/book.svg" alt="#">
+                            <img src="{% static './assets/img/reception/book.svg' %}" alt="#">
                         </div>
                         <div class="reception__box">
                             <p>Предоставление общежития</p>
-                            <img src="./assets/img/reception/book.svg" alt="#">
+                            <img src="{% static './assets/img/reception/book.svg' %}" alt="#">
                         </div>
                         <div class="reception__box">
                             <p>Перевод из других вузов</p>
-                            <img src="./assets/img/reception/book.svg" alt="#">
+                            <img src="{% static './assets/img/reception/book.svg' %}" alt="#">
                         </div>
                         <div class="reception__box">
                             <p>Поступление через “Абитуриент - online”</p>
-                            <img src="./assets/img/reception/book.svg" alt="#">
+                            <img src="{% static './assets/img/reception/book.svg' %}" alt="#">
                         </div>
                         <div class="reception__box">
                             <p>Прием иностранных граждан</p>
-                            <img src="./assets/img/reception/book.svg" alt="#">
+                            <img src="{% static './assets/img/reception/book.svg' %}" alt="#">
                         </div>
                     </div>
             </div>
@@ -227,10 +244,10 @@
             <div class="diploma__content">
                 <h1>Твой будущий диплом</h1>
                 <div class="diploma__block">
-                    <img src="./assets/img/diploma/Frame 66.png" alt="">
-                    <img src="./assets/img/diploma/Frame 66.png" alt="">
-                    <img src="./assets/img/diploma/Frame 66.png" alt="">
-                    <img src="./assets/img/diploma/Frame 73.png" alt="">
+                    <img src="{% static './assets/img/diploma/Frame 66.png' %}" alt="">
+                    <img src="{% static './assets/img/diploma/Frame 66.png' %}" alt="">
+                    <img src="{% static './assets/img/diploma/Frame 66.png' %}" alt="">
+                    <img src="{% static './assets/img/diploma/Frame 73.png' %}" alt="">
                 </div>
             </div>
         </div>
@@ -251,7 +268,7 @@
                         <div class="swiper-slide">
                             <div class="staff__box">
                                 <div class="staff__left">
-                                    <img src="./assets/img/staff/rector.png" alt="#">
+                                    <img src="{% static './assets/img/staff/rector.png' %}" alt="#">
                                 </div>
                                 <div class="staff__right">
                                     <h1>Бегалиев Улугбек Турдалиевич</h1>
@@ -260,14 +277,14 @@
                                         инновационных технологий (МУИТ), д.т.н., профессор
                                         МУИТ
                                     </p>
-                                    <img src="./assets/img/staff/image 51.svg" alt="#">
+                                    <img src="{% static './assets/img/staff/image 51.svg' %}" alt="#">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="staff__box">
                                 <div class="staff__left">
-                                    <img src="./assets/img/staff/rector.png" alt="#">
+                                    <img src="{% static './assets/img/staff/rector.png' %}" alt="#">
                                 </div>
                                 <div class="staff__right">
                                     <h1>Бегалиев Улугбек Турдалиевич</h1>
@@ -276,14 +293,14 @@
                                         инновационных технологий (МУИТ), д.т.н., профессор
                                         МУИТ
                                     </p>
-                                    <img src="./assets/img/staff/image 51.svg" alt="#">
+                                    <img src="{% static './assets/img/staff/image 51.svg' %}" alt="#">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="staff__box">
                                 <div class="staff__left">
-                                    <img src="./assets/img/staff/rector.png" alt="#">
+                                    <img src="{% static './assets/img/staff/rector.png' %}" alt="#">
                                 </div>
                                 <div class="staff__right">
                                     <h1>Бегалиев Улугбек Турдалиевич</h1>
@@ -293,7 +310,7 @@
                                         МУИТ
                                     </p>
                                     <div>
-                                        <img src="./assets/img/staff/image 51.svg" alt="#">
+                                        <img src="{% static './assets/img/staff/image 51.svg' %}" alt="#">
                                     </div>
                                 </div>
                             </div>
@@ -301,7 +318,7 @@
                         <div class="swiper-slide">
                             <div class="staff__box">
                                 <div class="staff__left">
-                                    <img src="./assets/img/staff/rector.png" alt="#">
+                                    <img src="{% static './assets/img/staff/rector.png' %}" alt="#">
                                 </div>
                                 <div class="staff__right">
                                     <h1>Бегалиев Улугбек Турдалиевич</h1>
@@ -310,14 +327,14 @@
                                         инновационных технологий (МУИТ), д.т.н., профессор
                                         МУИТ
                                     </p>
-                                    <img src="./assets/img/staff/image 51.svg" alt="#">
+                                    <img src="{% static './assets/img/staff/image 51.svg' %}" alt="#">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="staff__box">
                                 <div class="staff__left">
-                                    <img src="./assets/img/staff/rector.png" alt="#">
+                                    <img src="{% static './assets/img/staff/rector.png' %}" alt="#">
                                 </div>
                                 <div class="staff__right">
                                     <h1>Бегалиев Улугбек Турдалиевич</h1>
@@ -326,14 +343,14 @@
                                         инновационных технологий (МУИТ), д.т.н., профессор
                                         МУИТ
                                     </p>
-                                    <img src="./assets/img/staff/image 51.svg" alt="#">
+                                    <img src="{% static './assets/img/staff/image 51.svg' %}" alt="#">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="staff__box">
                                 <div class="staff__left">
-                                    <img src="./assets/img/staff/rector.png" alt="#">
+                                    <img src="{% static './assets/img/staff/rector.png' %}" alt="#">
                                 </div>
                                 <div class="staff__right">
                                     <h1>Бегалиев Улугбек Турдалиевич</h1>
@@ -342,14 +359,14 @@
                                         инновационных технологий (МУИТ), д.т.н., профессор
                                         МУИТ
                                     </p>
-                                    <img src="./assets/img/staff/image 51.svg" alt="#">
+                                    <img src="{% static './assets/img/staff/image 51.svg' %}" alt="#">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="staff__box">
                                 <div class="staff__left">
-                                    <img src="./assets/img/staff/rector.png" alt="#">
+                                    <img src="{% static './assets/img/staff/rector.png' %}" alt="#">
                                 </div>
                                 <div class="staff__right">
                                     <h1>Бегалиев Улугбек Турдалиевич</h1>
@@ -358,14 +375,14 @@
                                         инновационных технологий (МУИТ), д.т.н., профессор
                                         МУИТ
                                     </p>
-                                    <img src="./assets/img/staff/image 51.svg" alt="#">
+                                    <img src="{% static './assets/img/staff/image 51.svg' %}" alt="#">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="staff__box">
                                 <div class="staff__left">
-                                    <img src="./assets/img/staff/rector.png" alt="#">
+                                    <img src="{% static './assets/img/staff/rector.png' %}" alt="#">
                                 </div>
                                 <div class="staff__right">
                                     <h1>Бегалиев Улугбек Турдалиевич</h1>
@@ -374,14 +391,14 @@
                                         инновационных технологий (МУИТ), д.т.н., профессор
                                         МУИТ
                                     </p>
-                                    <img src="./assets/img/staff/image 51.svg" alt="#">
+                                    <img src="{% static './assets/img/staff/image 51.svg' %}" alt="#">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="staff__box">
                                 <div class="staff__left">
-                                    <img src="./assets/img/staff/rector.png" alt="#">
+                                    <img src="{% static './assets/img/staff/rector.png' %}" alt="#">
                                 </div>
                                 <div class="staff__right">
                                     <h1>Бегалиев Улугбек Турдалиевич</h1>
@@ -390,14 +407,14 @@
                                         инновационных технологий (МУИТ), д.т.н., профессор
                                         МУИТ
                                     </p>
-                                    <img src="./assets/img/staff/image 51.svg" alt="#">
+                                    <img src="{% static './assets/img/staff/image 51.svg' %}" alt="#">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="staff__box">
                                 <div class="staff__left">
-                                    <img src="./assets/img/staff/rector.png" alt="#">
+                                    <img src="{% static './assets/img/staff/rector.png' %}" alt="#">
                                 </div>
                                 <div class="staff__right">
                                     <h1>Бегалиев Улугбек Турдалиевич</h1>
@@ -406,7 +423,7 @@
                                         инновационных технологий (МУИТ), д.т.н., профессор
                                         МУИТ
                                     </p>
-                                    <img src="./assets/img/staff/image 51.svg" alt="#">
+                                    <img src="{% static './assets/img/staff/image 51.svg' %}" alt="#">
                                 </div>
                             </div>
                         </div>
@@ -420,17 +437,17 @@
             <div class="partners__content">
                 <h1>Наши партнеры</h1>
                 <div class="partners__block" id="Hiden">
-                    <img src="./assets/img/partners/Group 40.png" alt="#">
-                    <img src="./assets/img/partners/Group 41.png" alt="#">
-                    <img src="./assets/img/partners/Group 47.png" alt="#">
-                    <img src="./assets/img/partners/Group 40.png" alt="#">
-                    <img src="./assets/img/partners/Group 41.png" alt="#">
-                    <img src="./assets/img/partners/Group 47.png" alt="#">
-                    <img src="./assets/img/partners/Group 40.png" alt="#">
-                    <img src="./assets/img/partners/Group 41.png" alt="#">
-                    <img src="./assets/img/partners/Group 47.png" alt="#">
+                    <img src="{% static './assets/img/partners/Group 40.png' %}" alt="#">
+                    <img src="{% static './assets/img/partners/Group 41.png' %}" alt="#">
+                    <img src="{% static './assets/img/partners/Group 47.png' %}" alt="#">
+                    <img src="{% static './assets/img/partners/Group 40.png' %}" alt="#">
+                    <img src="{% static './assets/img/partners/Group 41.png' %}" alt="#">
+                    <img src="{% static './assets/img/partners/Group 47.png' %}" alt="#">
+                    <img src="{% static './assets/img/partners/Group 40.png' %}" alt="#">
+                    <img src="{% static './assets/img/partners/Group 41.png' %}" alt="#">
+                    <img src="{% static './assets/img/partners/Group 47.png' %}" alt="#">
                 </div>
-                <button id="HidenButton"><img src="./assets/img/faculties/add.svg" alt="">Показать еще</button>
+                <button id="HidenButton"><img src="{% static './assets/img/faculties/add.svg' %}" alt="">Показать еще</button>
             </div>
         </div>
     </section>
@@ -442,49 +459,49 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="news__box">
-                                <img src="./assets/img/news/Rectangle 27.png" alt="">
+                                <img src="{% static './assets/img/news/Rectangle 27.png' %}" alt="">
                                 <p>“Эл аралык кызматташтык”</p>
                                 <h3>24.02.2024</h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="news__box">
-                                <img src="./assets/img/news/Rectangle 27.png" alt="">
+                                <img src="{% static './assets/img/news/Rectangle 27.png' %}" alt="">
                                 <p>“Эл аралык кызматташтык”</p>
                                 <h3>24.02.2024</h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="news__box">
-                                <img src="./assets/img/news/Rectangle 27.png" alt="">
+                                <img src="{% static './assets/img/news/Rectangle 27.png' %}" alt="">
                                 <p>“Эл аралык кызматташтык”</p>
                                 <h3>24.02.2024</h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="news__box">
-                                <img src="./assets/img/news/Rectangle 27.png" alt="">
+                                <img src="{% static './assets/img/news/Rectangle 27.png' %}" alt="">
                                 <p>“Эл аралык кызматташтык”</p>
                                 <h3>24.02.2024</h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="news__box">
-                                <img src="./assets/img/news/Rectangle 27.png" alt="">
+                                <img src="{% static './assets/img/news/Rectangle 27.png' %}" alt="">
                                 <p>“Эл аралык кызматташтык”</p>
                                 <h3>24.02.2024</h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="news__box">
-                                <img src="./assets/img/news/Rectangle 27.png" alt="">
+                                <img src="{% static './assets/img/news/Rectangle 27.png' %}" alt="">
                                 <p>“Эл аралык кызматташтык”</p>
                                 <h3>24.02.2024</h3>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button>Все новости</button>
+                <a href="news/"><button>Все новости</button></a>
             </div>
         </div>
     </section>
